@@ -1,0 +1,21 @@
+Algoritmo "semnome"
+// 
+//  
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 09/05/2025
+Var
+// Seção de Declarações das variáveis 
+g : real
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+escreval("digite o numero que voce deseja usar",g)
+leia (g)
+
+enquanto (g > -67) faca
+escreval(g)
+g <- g - 1
+fimenquanto
+
+Fimalgoritmo
