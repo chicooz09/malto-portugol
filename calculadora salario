@@ -1,0 +1,25 @@
+Algoritmo "semnome"
+// 
+//  
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 07/05/2025
+Var
+// Seção de Declarações das variáveis 
+s, h : inteiro
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+escreval("quantas horas voce trabalhou esta semana?")
+leia(h)
+
+se (h < 40) entao
+s <- (h * 15)
+fimse
+se (h > 40) entao
+s <- (h * 21) + 600
+fimse
+escreval (" o salario final é de: ",s)
+
+
+Fimalgoritmo
