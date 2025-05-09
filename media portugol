@@ -1,0 +1,23 @@
+Algoritmo "semnome"
+// 
+//  
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 05/05/2025
+Var
+// Seção de Declarações das variáveis 
+numero1, numero2, media: real
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+   escreval("digite o primeiro numero")
+   leia(numero1)
+   
+   escreval("digite o segundo numero")
+   leia(numero2)
+   
+   media <- (numero1 + numero2)/2
+
+   escreva("a media é:" , media)
+
+Fimalgoritmo
