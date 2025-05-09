@@ -1,0 +1,48 @@
+Algoritmo "semnome"
+// 
+//  
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 07/05/2025
+Var
+// Seção de Declarações das variáveis 
+ aba, num1, num2, num3, num4 : inteiro
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+   aba <- randi(100)
+
+escreval("-------------------------------------------------------------")
+escreval("funcionamento do jogo:")
+escreval("Dois jogadores terao palpites de numeros entre 0 e 100")
+escreval("Quem chegar mais perto ganha o jogo")
+escreval("-------------------------------------------------------------")
+
+escreva("palpite do jogador 1: ")
+leia (num1)
+escreva("palpite do jogador 2: ")
+leia (num2)
+
+escreva("o numero escolhido foi: ", aba)
+
+     se (num1 - aba < 0) entao
+     num3 <- -(num1 - aba)
+     senao
+     num3 <- num1 - aba
+     fimse
+     
+     se (num2 - aba < 0) entao
+     num4 <- -(num2 - aba)
+     senao
+     num4 <- num2 - aba
+     fimse
+
+     escreval ("")
+     
+     se (num3 < num4) entao
+        escreval ("o jogador 1 ganhou")
+     senao se (num3 > num4) entao
+           escreval ("o jogador 2 ganhou)
+     fimse
+
+Fimalgoritmo
