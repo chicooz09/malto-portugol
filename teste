@@ -1,0 +1,26 @@
+Algoritmo "semnome"
+// 
+//
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 09/05/2025
+Var
+// Seção de Declarações das variáveis 
+n, h, j : inteiro
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+ repita
+ escreva ("digite um numero para o calculo da tabuada", n)
+ leia (n)
+
+ escreval (" a taboada de", n," é igual a: ")
+se (n>10) e (n<10) entao
+ escreva ("ERRO!!!")
+fimse
+para h de 1 ate 10 faca
+     j <- (n * h)
+     escreval (n, " X",h, " =",j)
+fimpara
+
+Fimalgoritmo
