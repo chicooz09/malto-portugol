@@ -1,0 +1,23 @@
+Algoritmo "semnome"
+// 
+//  
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 05/05/2025
+Var
+// Seção de Declarações das variáveis 
+salarioA, taxa, salarioF, X : real
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+escreva ("digite seu salario atual: ")
+leia (salarioA)
+escreval ("---------------------------------------")
+escreva ("qual a porcentagem do aumento? ")
+leia (taxa)
+
+X <- (taxa /100) * salarioA
+salarioF <- ( salarioA + X)
+escreval ("--------------------------------------")
+escreval ("o salario final é de:",salarioF)
+Fimalgoritmo
