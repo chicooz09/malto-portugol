@@ -1,0 +1,13 @@
+Algoritmo "semnome"
+
+Var
+
+Inicio
+timer(500)
+           escreval("cliente leonardo coelho")
+           escreval("cliente do banco macro visualG desde 2010")
+limpatela
+           escreval("obrigado pela preferencia")
+
+
+Fimalgoritmo
