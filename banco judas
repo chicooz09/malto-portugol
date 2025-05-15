@@ -1,0 +1,61 @@
+Algoritmo "sistema bancario"
+
+Var
+senha, op: real
+nome : caracter
+Inicio
+
+escreval ("***************************************")
+escreval ("        BANCO JUDAS ESCARIOTES          ")
+escreval ("***************************************")
+escreval ("")
+timer(600)
+escreva ("Digite o seu nome: ",nome)
+leia (nome)
+escreval("------------------------------------------")
+   repita
+   escreva ("Digite sua senha correta:")
+   leia(senha)
+   se (senha<>123456) entao
+   fimse
+   ate (senha=123456)
+
+escreval("------------------------------------------")
+escreval("Obrigado " ,nome, " - senha correta")
+escreval("------------------------------------------")
+limpatela
+timer(0)
+
+escreval ("***************************************")
+escreval ("        BANCO JUDAS ESCARIOTES          ")
+escreval ("***************************************")
+escreval ("")
+
+escreval("ESCOLHA UMA OPCÃO")
+escreval("1 - Para ver o saldo")
+escreval("2 - Para emprestimo")
+escreval("3 - Para sair")
+
+repita
+enquanto op<>3 faca
+leia(op)
+
+escolha(op)
+caso 1
+     escreval("Saldo = R$ 12.987,00")
+caso 2
+     escreval("Emprestimo disponivel : R$ 30.000,00")
+caso 3
+     escreval("------------------------------------------")
+     escreval("Obrigado ",nome, " tenha um bom dia!!")
+     escreval("------------------------------------------")
+outrocaso
+         escreval("Opção invalida")
+
+fimescolha
+fimenquanto
+ate (op = 3)
+
+
+
+Fimalgoritmo
