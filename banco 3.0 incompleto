@@ -1,0 +1,95 @@
+Algoritmo "sistema bancario"
+
+Var
+senha, op, saldo, saldoR, saldoN, data: inteiro
+nome : caracter
+Inicio
+escreval ("***************************************")
+escreval ("        BANCO JUDAS ESCARIOTES          ")
+escreval ("***************************************")
+escreval ("------------------------------------------")
+escreval ("          REALIZAR LOGIN               ")
+escreval ("------------------------------------------")
+escreval ("")
+escreva ("Digite seu nome completo: ")
+leia (nome)
+escreva ("Digite sua data de nacimento :")
+leia (data)
+escreva ("digite sua senha :")
+leia(senha)
+limpatela
+
+
+escreval ("***************************************")
+escreval ("        BANCO JUDAS ESCARIOTES          ")
+escreval ("***************************************")
+escreval ("")
+timer(600)
+escreval ("Digite o seu nome: ")
+
+escreval("------------------------------------------")
+   repita
+   escreva ("Digite sua senha correta:")
+   leia(senha)
+   se (senha<>senha) entao
+   fimse
+   ate (senha=senha)
+
+escreval("------------------------------------------")
+escreval("Obrigado " ,nome, " - senha correta")
+escreval("------------------------------------------")
+limpatela
+timer(0)
+
+escreval ("***************************************")
+escreval ("        BANCO JUDAS ESCARIOTES          ")
+escreval ("***************************************")
+escreval ("")
+
+escreval("ESCOLHA UMA OPCÃO")
+escreval("1 - Para ver o saldo")
+escreval("2 - Para emprestimo")
+escreval("3 - Para depósito")
+escreval("4 - Para retirada")
+escreval("5 - Para sair")
+saldo <- 0
+repita
+enquanto op<>5 faca
+leia(op)
+
+escolha(op)
+caso 1
+     escreval("Saldo = R$ ",saldo)
+caso 2
+     escreval("Emprestimo disponivel : R$ 30.000,00")
+caso 3
+     escreval("Quanto voce deseja adicionar")
+     leia(saldoN)
+     saldo <- saldoN + saldo
+     escreval("Saldo atualizado : ",saldo)
+caso 4
+     escreval("quanto voce deseja retirar?")
+     leia(saldoR)
+     se saldoR > saldo entao
+     escreval("ERRO!!!! Valor indisponivel para retirada")
+     fimse
+     se saldoR < saldo entao
+     saldo <- saldo - saldoR
+     escreval("Saldo atualizado : ",saldo)
+     fimse
+
+caso 5
+     escreval("------------------------------------------")
+     escreval("Obrigado ",nome, " tenha um bom dia!!")
+     escreval("------------------------------------------")
+
+outrocaso
+         escreval("Opção invalida")
+
+fimescolha
+fimenquanto
+ate (op = 5)
+
+
+
+Fimalgoritmo
