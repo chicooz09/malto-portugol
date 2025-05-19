@@ -1,0 +1,12 @@
+emprestimo <- 30000.00
+     escreval("Emprestimo disponivel : R$",emprestimo)
+     escreval("Quanto voce deseja retirar?")
+     leia(emprestimo)
+     se emprestimoR > emprestimoT entao
+     escreval("ERRO!!! Valor maior do que o emprestimo atual")
+     fimse
+     se emprestimoR <= emprestimo entao
+     emprestimoT <- emprestimo
+     saldo <- emprestimoT - emprestimoR
+     escreval("saldo atualizado : ",saldo)
+     emprestimo <- emprestimoT - emprestimoR
