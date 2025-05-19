@@ -1,12 +1,127 @@
-emprestimo <- 30000.00
+Algoritmo "sistema bancario"
+
+Var
+senha, op, saldo, saldoR, saldoN, data, dataR, senhaR, emprestimo : real
+retirar : real
+nome, nomeR : caracter
+Inicio
+escreval ("***************************************")
+escreval ("        BANCO JUDAS ESCARIOTES          ")
+escreval ("***************************************")
+escreval ("------------------------------------------")
+escreval ("         REALIZAR CADASTRO               ")
+escreval ("------------------------------------------")
+escreval ("")
+escreva ("Digite seu nome completo: ")
+leia (nome)
+escreva ("Digite sua data de nacimento :")
+leia (data)
+escreva ("digite sua senha :")
+leia(senha)
+limpatela
+
+
+escreval ("***************************************")
+escreval ("        BANCO JUDAS ESCARIOTES          ")
+escreval ("***************************************")
+escreval ("")
+
+nomeR <- nome
+dataR <- data
+senhaR <- senha
+   repita
+   escreva ("Digite seu nome correto:")
+   leia(nome)
+   se (nomeR <> nome) entao
+   fimse
+   ate (nome = nomeR)
+
+escreval("------------------------------------------")
+   repita
+   escreva ("Digite sua data de nascimento correta:")
+   leia(data)
+   se (dataR<>data) entao
+   fimse
+   ate (data=dataR)
+escreval("------------------------------------------")
+   repita
+   escreva ("Digite sua senha correta:")
+   leia(senha)
+   se (senhaR<>senha) entao
+   fimse
+   ate (senha=senhaR)
+
+escreval("------------------------------------------")
+escreval("Obrigado " ,nome, " - senha correta")
+escreval("------------------------------------------")
+limpatela
+timer(0)
+
+escreval ("***************************************")
+escreval ("        BANCO JUDAS ESCARIOTES          ")
+escreval ("***************************************")
+escreval ("")
+
+escreval("ESCOLHA UMA OPCÃO")
+escreval("1 - Para ver o saldo")
+escreval("2 - Ver emprestimo")
+escreval("3 - Fazer emprestimo")
+escreval("4 - Para depósito")
+escreval("5 - Para retirada")
+escreval("6 - Para sair")
+saldo <- 0
+emprestimo <- 30000
+repita
+enquanto op<>5 faca
+leia(op)
+
+escolha(op)
+caso 1
+     escreval("Saldo = R$ ",saldo)
+caso 2
      escreval("Emprestimo disponivel : R$",emprestimo)
+caso 3
+   escreval ("===================================")
      escreval("Quanto voce deseja retirar?")
-     leia(emprestimo)
-     se emprestimoR > emprestimoT entao
+     leia(retirar)
+     se retirar <= emprestimo entao
+     escreval ("Emprestimo efetuado")
+     emprestimo <- emprestimo - retirar
+     saldo <- saldo + retirar
+     escreval ("Saldo final = R$",saldo,"")
+     escreval("Emprestimo disponivel",emprestimo,"")
+     senao
+     retirar > emprestimo entao
      escreval("ERRO!!! Valor maior do que o emprestimo atual")
      fimse
-     se emprestimoR <= emprestimo entao
-     emprestimoT <- emprestimo
-     saldo <- emprestimoT - emprestimoR
-     escreval("saldo atualizado : ",saldo)
-     emprestimo <- emprestimoT - emprestimoR
+caso 4
+     escreval("Quanto voce deseja adicionar")
+     leia(saldoN)
+     saldo <- saldoN + saldo
+     escreval("Saldo atualizado : ",saldo)
+caso 5
+     escreval("quanto voce deseja retirar?")
+     leia(saldoR)
+     se saldoR > saldo entao
+     escreval("ERRO!!!! Valor indisponivel para retirada")
+     fimse
+     se saldoR < saldo entao
+     saldo <- saldo - saldoR
+     escreval("Saldo atualizado : ",saldo)
+     fimse
+
+caso 6
+     escreval("------------------------------------------")
+     escreval("Obrigado ",nome, " tenha um bom dia!!")
+     escreval("------------------------------------------")
+
+outrocaso
+         escreval("Opção invalida")
+
+fimescolha
+fimenquanto
+ate (op = 5)
+
+
+
+Fimalgoritmo
