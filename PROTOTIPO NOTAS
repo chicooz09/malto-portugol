@@ -1,0 +1,53 @@
+Algoritmo "semnome"
+
+Var
+vv : vetor[1..10] de inteiro
+nv : vetor[1..5] de caractere
+
+
+Inicio
+escreval ("Insira o nome do primeiro aluno")
+leia(nv[1])
+escreval("digite a primeira nota do primeiro aluno :")
+leia(vv[1])
+escreval("digite a segunda mota do primeiro aluno :")
+leia(vv[2])
+limpatela
+escreval ("Insira o nome do segundo aluno")
+leia(nv[2])
+escreval("digite a primeira nota do segundo aluno :")
+leia(vv[3])
+escreval("digite a segunda nota do segundo aluno :")
+leia(vv[4])
+limpatela
+escreval ("Insira o nome do terceiro aluno")
+leia(nv[3])
+escreval("digite a primeira nota do terceiro aluno :")
+leia(vv[5])
+escreval("digite a segunda nota do teceiro aluno :")
+leia(vv[6])
+limpatela
+escreval ("Insira o nome do quarto aluno")
+leia(nv[4])
+escreval("digite a primeira nota do quarto aluno :")
+leia(vv[7])
+escreval("digite a segunda nota do quarto aluno :")
+leia(vv[8])
+limpatela
+escreval ("Insira o nome do quinto aluno")
+leia(nv[5])
+escreval("digite a primeira nota do quinto aluno :")
+leia(vv[9])
+escreval("digite a segunda nota do quinto aluno :")
+leia(vv[10])
+limpatela
+
+escreval("-------------------------------------------")
+escreval("RESULTADO DA PESQUISA - ALUNOS")
+escreval("-------------------------------------------")
+escreval("ALUNO":,18 "NOTA 01":,41
+
+
+
+
+Fimalgoritmo
