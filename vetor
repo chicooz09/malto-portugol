@@ -1,14 +1,25 @@
 Algoritmo "semnome"
 Var
 nVetor : vetor [0..4] de inteiro
-
+n0, n1, n2, n3, n4 : inteiro
 
 Inicio
-nVetor[0] <-2
-nVetor[1] <-3
-nVetor[2] <-5
-nVetor[3] <-7
-nVetor[4] <-8
+
+escreval ("Digite o primeiro numero")
+leia(n0 )
+escreval ("Digite o segundo numero")
+leia(n1 )
+escreval ("Digite o terceiro numero")
+leia(n2 )
+escreval ("Digite o quarto numero")
+leia(n3 )
+escreval ("Digite o quinto numero")
+leia(n4 )
+nVetor[0] <- n0
+nVetor[1] <- n1
+nVetor[2] <- n2
+nVetor[3] <- n3
+nVetor[4] <- n4
 
 escreval ("na posiçao 0, o valor é:", nVetor [0])
 escreval ("na posiçao 1, o valor é:", nVetor [1])
