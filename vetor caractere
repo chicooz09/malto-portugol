@@ -1,7 +1,7 @@
 Algoritmo "semnome"
 Var
 nVetor : vetor [0..2] de caractere
-n0, n1, n2 : caractere
+
 
 Inicio
 escreval ("Digite o primeiro nome")
