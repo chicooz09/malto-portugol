@@ -1,0 +1,28 @@
+Algoritmo "semnome"
+Var
+nVetor : vetor [1..3] de logico
+a, b, c : inteiro
+
+Inicio
+    escreval ("--------------------------")
+    escreval ("resultado logico")
+    escreval ("---------------------------")
+    escreval ("para ----> (a+b) > c")
+    escreval ("para ----> (a+c) <= b")
+    escreval ("para ----> (c - a) >= b")
+    escreval ("--------------------------")
+    escreval ("digite o primeiro numero: ")
+    leia (a)
+    escreval ("digite o segundo numero: ")
+    leia(b)
+    escreval ("digite o terceiro numero: ")
+    leia(c)
+  nVetor[1] <- (a+b) > c
+  nVetor[2] <- (a+c) <= b
+  nVetor[3] <- (c - a) >= b
+escreval ("--------------------------")
+escreval ("O resultado da primeira questão é: ":37,  nVetor [1])
+escreval ("O resultado da segunda questão é: ":37, nVetor [2])
+escreval ("O resultado da terceira questão é: ":37, nVetor [3])
+escreval ("--------------------------")
+Fimalgoritmo
