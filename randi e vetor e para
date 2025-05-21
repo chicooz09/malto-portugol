@@ -1,0 +1,20 @@
+Algoritmo "semnome"
+
+Var
+nVetor : vetor[1..5] de inteiro
+v : inteiro
+
+
+Inicio
+ para v de 1 ate 5 faca
+ nVetor [v]<- randi(101)
+ fimpara
+ escreva("numeros gerados")
+ para v de 1 ate 5 faca
+ escreva(nVetor[v])
+ fimpara
+
+
+
+
+Fimalgoritmo
