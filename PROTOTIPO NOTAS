@@ -1,9 +1,10 @@
 Algoritmo "semnome"
 
 Var
-vv : vetor[1..10] de inteiro
+vv : vetor[1..10] de real
 nv : vetor[1..5] de caractere
-
+media : vetor[1..5] de real
+i: inteiro
 
 Inicio
 escreval ("Insira o nome do primeiro aluno")
@@ -41,13 +42,20 @@ leia(vv[9])
 escreval("digite a segunda nota do quinto aluno :")
 leia(vv[10])
 limpatela
+         para i de 1 ate 5 faca
+    media[i] <- (vv[i*2 - 1] + vv[i*2]) / 2
+             fimpara
 
-escreval("-------------------------------------------")
-escreval("RESULTADO DA PESQUISA - ALUNOS")
-escreval("-------------------------------------------")
-escreval("ALUNO":,18 "NOTA 01":,41
-
-
-
+escreval("-------------------------------------------------------------")
+escreval("             RESULTADO FINAL DOS ALUNOS       ")
+escreval("-------------------------------------------------------------")
+escreval("ALUNO":10, "NOTA 1":8, "NOTA 2":8, "MÉDIA":8)
+escreval("-------------------------------------------------------------")
+escreval(nv[1]:9, vv[1]:6:1, vv[2]:8:1, media[1]:7:1)
+escreval(nv[2]:9, vv[3]:6:1, vv[4]:8:1, media[2]:7:1)
+escreval(nv[3]:9, vv[5]:6:1, vv[6]:8:1, media[3]:7:1)
+escreval(nv[4]:9, vv[7]:6:1, vv[8]:8:1, media[4]:7:1)
+escreval(nv[5]:9, vv[9]:6:1, vv[10]:8:1, media[5]:7:1)
+escreval("-------------------------------------------------------------")
 
 Fimalgoritmo
